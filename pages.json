@@ -1,0 +1,159 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页,
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "主页"
+            }
+        },
+        {
+            "path" : "pages/login/login",
+            "style" : {
+                "navigationBarTitleText" : "登录"
+            }
+        },
+        {
+            "path" : "pages/reg/reg",
+            "style" : {
+                "navigationBarTitleText" : "注册"
+            }
+        },
+        {
+            "path" : "pages/pwd/pwd",
+            "style" : {
+                "navigationBarTitleText" : "找回密码"
+            }
+        },
+        {
+            "path" : "pages/user/user",
+            "style" : {
+                "navigationBarTitleText" : "我的"
+            }
+        },
+        {
+            "path" : "pages/statistical/statistical",
+            "style" : {
+                "navigationBarTitleText" : "统计"
+            }
+        },
+        {
+            "path" : "pages/assets/assets",
+            "style" : {
+                "navigationBarTitleText" : "资产"
+            }
+        },
+        {
+            "path" : "pages/assets/assets_detail",
+            "style" : {
+                "navigationBarTitleText" : "消费详情"
+            }
+        },
+        {
+            "path" : "pages/assets/assets_form",
+            "style" : {
+                "navigationBarTitleText" : "余额设置"
+            }
+        },
+        {
+            "path" : "pages/statement/statement_add",
+            "style" : {}
+        },
+        {
+            "path" : "pages/statement/detail",
+            "style" : {
+                "navigationBarTitleText" : "账单详情"
+            }
+        },
+        {
+            "path" : "pages/form/chose_category",
+            "style" : {
+                "navigationBarTitleText" : "分类选择"
+            }
+        } ,
+        {
+            "path" : "pages/myhome/myhome",
+            "style" : {
+                "navigationBarTitleText" : "我的"
+            }
+        },
+        {
+            "path" : "pages/test/test",
+            "style" : {}
+        },
+        {
+            "path" : "pages/test/tt",
+            "style" : {}
+        },
+        {
+            "path" : "pages/assets/filter",
+            "style" : {
+                "navigationBarTitleText" : "aaa"
+            }
+        },
+        {
+            "path" : "pages/mytools/super_statement",
+            
+            "style" : {
+                "navigationBarTitleText" : "超级账单"
+            }
+        },
+        {
+            "path" : "pages/mytools/search_statement",
+            
+            "style" : {
+                "navigationBarTitleText" : "快捷搜索"
+            }
+        } ,
+        {
+            "path" : "pages/mytools/expend_chart",
+            
+            "style" : {
+                "navigationBarTitleText" : "消费报表"
+            }
+        } ,
+        {
+            "path" : "pages/mytools/category_chart",
+            
+            "style" : {
+                "navigationBarTitleText" : "类别报表"
+            }
+        } 
+    ],
+    "tabBar" : {
+        "color" : "#7a7e83",
+        "selectedColor" : "#0faeff",
+        "backgroundColor" : "#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/index/index",
+                "text" : "首页",
+                "iconPath" : "static/settings/statement.png",
+                "selectedIconPath" : "static/settings/statement-active.png"
+            },
+            {
+                "pagePath" : "pages/statistical/statistical",
+                "text" : "统计",
+                "iconPath" : "static/settings/statistic.png",
+                "selectedIconPath" : "static/settings/statistic-active.png"
+            },
+            {
+                "pagePath" : "pages/assets/assets",
+                "text" : "资产",
+                "iconPath" : "static/settings/asset.png",
+                "selectedIconPath" : "static/settings/asset.png"
+            },
+            {
+                "pagePath" : "pages/myhome/myhome",
+                "text" : "我的",
+                "iconPath" : "static/settings/user_1.png",
+                "selectedIconPath" : "static/settings/user_1-active.png"
+            }
+        ]
+    },
+    "globalStyle" : {
+        "navigationBarTextStyle" : "white",
+        "navigationBarBackgroundColor" : "#0faeff",
+        "backgroundColor" : "#fbf9fe"
+    }
+}

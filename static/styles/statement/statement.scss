@@ -1,0 +1,95 @@
+@import '../_variable.scss';
+
+page {
+  background: #fafafa;
+}
+.container {
+  > .money {
+    height:130rpx !important;
+    line-height: 130rpx !important;
+  }
+  > .column {
+    min-height: 120rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    padding:0 24rpx;
+    border-bottom: 1px solid #efefef;
+    font-size: 32rpx;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    > text {
+      min-width:100rpx;
+      &:last-child {
+        color: $secondaryText;
+      }
+    }
+    .remark {
+      height:120rpx !important;
+      line-height: 120rpx !important;
+      text-align: right;
+    }
+  }
+  > .location-column {
+    > view {
+      display:flex;
+      align-items:center;
+    }
+    input {
+      display: inline-block;
+      padding-right:6px;
+    }
+  }
+  .money-input {
+    height: 130rpx;
+    font-size: 56rpx;
+    text-align: right;
+  }
+  .frequent-use {
+    text-align: right;
+    font-size: 24rpx;
+    margin:24rpx;
+    > text:first-child {
+      color: $secondaryText;
+    }
+    .label {
+      background: #efefef;
+      color: $secondaryText;
+      padding:8rpx 16rpx;
+      margin-right: 8rpx;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .transfer-type {
+    display: flex;
+    align-items: center;
+    .transfer-icon {
+      width:60rpx;
+      height:60rpx;
+    }
+  }
+  .zan-btns > button{
+    &:last-child {
+      margin-top: 8px;
+    }
+  }
+  .input-hidden {
+    display: none !important;
+  }
+}
+.tab {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: white;
+  display: flex;
+  > view {
+    flex: 1;
+    text-align: center;
+  }
+  .active {
+    color: $primaryColor;
+    border-bottom: 1px solid $primaryColor;
+  }
+}

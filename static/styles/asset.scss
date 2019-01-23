@@ -1,0 +1,107 @@
+@import './_variable.scss';
+
+.wallet-header {
+  height:420upx;
+  position:relative;
+  // background:linear-gradient(to right,$darkPrimaryColor, $primaryColor);
+  // background: $darkPrimaryColor;
+  background: $darkPrimaryColor;
+  box-shadow:0 0 20upx $divideText;
+  .assets {
+    height:220upx;
+    display: flex;
+    align-items: center;
+    > view {
+      float:left;
+      width:50%;
+      color:white;
+      text-align:center;
+      &:last-child {
+        color: #efefef;
+      }
+    }
+    .right > view {
+      float:left;
+      margin-left:64upx;
+      > text {
+        margin-right:28upx;
+      }
+    }
+  }
+  .yesterday-amount {
+    color:white;
+    font-size:24upx;
+    text-align:center;
+  }
+  .header-text {
+    font-size: 56upx;
+  }
+  .desc-text {
+    font-size: 28upx;
+  }
+}
+
+#all-assets {
+  background:#f2f2f2;
+  .asset {
+    background:#fff;
+    padding:0 24upx;
+    margin-bottom:24upx;
+    box-shadow:0upx 0upx 2upx #ccc;
+    &:last-child {
+      margin-bottom:0;
+    }
+    .column:last-child {
+      border: none;
+    }
+    > text {
+      color:$primaryText;
+    }
+    .asset-header {
+      display: flex;
+      justify-content: space-between;
+      padding-top:8px;
+    }
+  }
+
+  .column:before, .column:after {
+    display:table;
+    content:" ";
+  }
+  .column:after {
+    clear:both;
+  }
+
+  .column {
+    height: 110upx;
+    line-height: 110upx;
+    border-bottom:1px solid #efefef;
+    &:last-child {
+      .title, .money {
+        border:none;
+      }
+    }
+    .icon {
+      height: 110upx;
+      display: flex;
+      justify-content: center;
+      flex-direction:column;
+    }
+    .title {
+      margin-left:60upx;
+      margin-right:180upx;
+      padding-left:16upx;
+      font-size:34upx;
+    }
+    .money {
+      font-size:34upx;
+      text-align:right;
+      color: $secondaryText;
+    }
+  }
+  
+  .zan-loadmore {
+    width: 100% !important;
+    background: white;
+  }
+}
